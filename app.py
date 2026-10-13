@@ -9,7 +9,8 @@ import numpy as np
 import pandas as pd
 import datetime as dt
 
-
+#Agregando un comentario al archivo de Andrés
+#Adicionalmente se cambió un colorsito en la línea 46.
 
 app = dash.Dash(
     __name__,
@@ -42,7 +43,7 @@ def plot_series(data, initial_date, proy):
             x=data_plot.index,
             y=data_plot['AT_load_actual_entsoe_transparency'],
             mode='lines',
-            line=dict(color="#188463"),
+            line=dict(color="#8A2BE2"),
         ),
         go.Scatter(
             name='Proyección',
